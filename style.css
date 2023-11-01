@@ -9,14 +9,28 @@
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #06283D;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    margin-top: 1%;
+    font-size: 40px;
+    font-weight: 500;
+    color: #dff6ff;
+    text-shadow: 2px 2px 12px #000;
 }
 
 .container{
     position: relative;
-    width: 400px;
+    width: 420px;
     height: 105px;
     background: #fff;
     padding: 28px 32px;
@@ -44,7 +58,7 @@ body{
 }
 
 .search-box input::placeholder{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     color: #06283D;
     text-transform: capitalize;
@@ -64,6 +78,8 @@ body{
 .search-box button:hover{
     color: #fff;
     background: #06283D;
+    scale: 1.09;
+    transition: all .54s ease;
 }
 
 .search-box i{
